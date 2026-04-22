@@ -1,12 +1,27 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/SI3SuuUn)
-# Project Details
+# Project Development Note: StockTracker App
 
-Hello students!
+### 🤖 AI Tools Used
 
-For detailed instructions and requirements for this Hackathon, please click the link below:
+- **Gemini (Google):**
 
-[Details](https://gvsu-cis371.github.io/projects/hackathon.html)
+### 📈 Stock Data Service
 
-Please read all instructions carefully before starting your work. If you have any questions, feel free to ask.
+- **Twelve Data API:**
 
-Happy coding!
+### ✅ Working Features
+
+- **Real-time Market Search:** Ability to fetch live stock data by ticker symbol using the Twelve Data endpoint.
+- **Watchlist Management:** A centralized Pinia store allows users to add and remove stocks from their personal watchlist.
+- **Dual-View Navigation:** A functional routing system using `createWebHashHistory` to toggle between the Search dashboard and the Watchlist.
+- **Modern UI/UX:** A clean, responsive interface built with Vuetify components, customized with a specific "Avenir" typography and centered layout.
+
+### 🚧 Incomplete Features / Future Roadmap
+
+- **Data Persistence:** Currently, the watchlist is stored in memory. Future versions will implement a Firebase backend.
+- **Form Validation:** Improved error handling for invalid ticker symbols or empty search inputs.
+
+### ⚠️ Limitations & Encountered Issues
+
+- **API Rate Limits:** The Twelve Data free tier is restricted to **8 requests per minute**.
+- **Environment Configuration:** The app is configured with **Hash Routing** (`/#/`).
+- **Styling Conflicts:** Balancing Vuetify's Material Design defaults with custom CSS resets required specialized styling overrides in the root `App.vue`.
